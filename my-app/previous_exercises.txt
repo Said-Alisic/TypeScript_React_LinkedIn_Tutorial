@@ -1,0 +1,67 @@
+    // Basic TS datatypes
+    /**
+      let firstValue: string = 'Sunny';
+      let secondValue: number = 27;
+      let thirdValue: boolean = true;
+      let fourthValue: number[] = [1, 9, 3]; // An array in TS is an Object type
+      let fifthValue: Array<string> = ['Hey', 'There', 'Beautiful'];
+
+          <li>The value { firstValue } is of { typeof firstValue } type!</li>
+          <li>The value { secondValue } is of { typeof secondValue } type!</li>
+          <li>The value { thirdValue } is of { typeof thirdValue } type!</li>
+          <li>The value { fourthValue } is of { typeof fourthValue } type!</li>
+          <li>The value { fifthValue } is of { typeof fifthValue } type!</li>
+    */
+
+    /** 
+
+      // tuple - type of array where you can insert multiple types in
+      let aTuple: [string, number] = ['Sunny', 27];
+
+      // enum
+      enum Codes {first = 1, second = 2}; 
+
+      // any - mostly for prototyping
+      let firstName: any = 'Any!';
+
+      // void
+      // functions need to have return types in TS
+      const warning = ():void => {
+        console.log(`Warning`);
+        
+      }
+
+          <li>The value { aTuple[0] } is of { typeof aTuple[0] } type!</li>
+          <li>The value { aTuple[1] } is of { typeof aTuple[1] } type!</li>
+          <li>The value { Codes.first } is of { typeof Codes.first } type!</li>
+          <li>The value { Codes.second } is of { typeof Codes.second } type!</li>
+          <li>The value { firstName } is of { typeof firstName } type!</li>
+    */
+
+
+// Creating functional component
+const Message = () => {
+    return (
+        <p>This is a quick message for testing!!!</p>       
+    );
+}
+
+export default Message;
+
+// Call it with <Message/> in App.tsx
+
+
+/**
+  // Just before rendering a component
+  componentWillMount() {
+    console.log('Almost there...');
+    
+
+  }
+
+  // Runs after rendering a component
+  componentDidMount() {
+    console.log('Finally... hello!');
+
+  }
+*/

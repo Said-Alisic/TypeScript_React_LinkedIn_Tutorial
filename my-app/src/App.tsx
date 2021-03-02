@@ -1,19 +1,22 @@
 import React, { Component } from 'react'
 import logo from './logo.svg';
 import './App.css';
+import Message from './Message';
 
-class App extends Component {
+class App extends Component<any> {
+
+
+
   render() {
-    let firstValue: string = 'Sunny';
 
     return (
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          The value { firstValue } is of { typeof firstValue } type!
+          <Message name='Sunny' message='This is a simple message for testing!!!'/>
+          <ul>
+            
+          </ul>
         </header>
       </div>
     );
