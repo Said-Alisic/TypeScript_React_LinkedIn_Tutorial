@@ -4,18 +4,7 @@ import './App.css';
 import Message from './Message';
 
 
-const initialState = {
-  name: 'Sunny',
-  message: 'TypeScript is cool!!!'
-}
-
-// define new type - usually define state properly
-type State = Readonly<typeof initialState>;
-
-class App extends Component<any, State> {
-
-  // define state as a readonly-variable and define its type
-  readonly state: State = initialState;
+class App extends Component {
 
   render() {
 
@@ -23,8 +12,7 @@ class App extends Component<any, State> {
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          <Message name='Sunny' message='this is a simple message for testing!!!'/>
-          <Message name={this.state.name} message={this.state.message}/>
+          <Message/>
           <ul>
             
           </ul>

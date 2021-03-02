@@ -65,3 +65,41 @@ export default Message;
 
   }
 */
+
+/**
+interface UserMessage {
+    name: string;
+    message: string;
+
+} 
+
+// Accept a prop,
+// expect an interface 
+// expect the component to return a type 
+const Message = (props: UserMessage): any => {
+    return (
+        <div>
+            <p>{props.name}, {props.message}</p>
+        </div>
+        
+    );
+}
+
+*/
+
+/**
+<Message name='Sunny' message='this is a simple message for testing!!!'/>
+*/
+
+/**
+  const initialState = {
+    name: 'Sunny',
+    message: 'TypeScript is cool!!!'
+  }
+  
+  // define new type - usually define state properly
+  type State = Readonly<typeof initialState>;
+
+    // define state as a readonly-variable and define its type
+    //readonly state: State = initialState;
+*/
