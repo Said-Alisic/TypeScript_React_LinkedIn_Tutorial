@@ -13,7 +13,6 @@ interface UserMessage {
 const Message = (props: UserMessage): any => {
     return (
         <div>
-            <p>This is a quick message for testing!!!</p>  
             <p>{props.name}, {props.message}</p>
         </div>
         
